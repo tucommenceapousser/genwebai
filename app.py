@@ -12,7 +12,10 @@ openai.api_key = os.getenv('OPENAI_API_KEY')
 app = Flask(__name__)
 
 def generate_code(mode, details, colors=None):
-    prompt = f"Create a {mode} website based on the following details: {details}. Customize with colors {colors}" if colors else f"Create a {mode} website based on the following details: {details}"
+    if colors:
+        prompt = f"Create a {mode} website based on the following details: {details}. Customize with colors {colors}"
+    else:
+        prompt = f"Create a {mode} website based on the following details: {details}"
     response = openai.Completion.create(
         engine="gpt-4",
         prompt=prompt,
@@ -22,7 +25,7 @@ def generate_code(mode, details, colors=None):
         temperature=0.7,
     )
     return response.choices[0].text.strip()
-
+    
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
