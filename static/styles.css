@@ -1,0 +1,88 @@
+/* Global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
+  color: #d3d3d3;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  color: #00FF00; /* Fluo vert */
+  text-align: center;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 5px rgba(0, 255, 0, 0.5); /* Effet fluo */
+}
+
+p {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+a {
+  color: #FF1493; /* Fluo rose */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #FF00FF; /* Changement de couleur au survol */
+}
+
+/* Header styles */
+header {
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-bottom: 2px solid #00FF00;
+}
+
+/* Main content area */
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #FF1493; /* Fluo rose */
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #FF1493; /* Fluo rose au survol */
+  color: #121212;
+  transform: scale(1.1); /* Effet d'agrandissement au survol */
+}
+
+/* Section de prévisualisation */
+.preview {
+  background-color: #222;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+#preview-box {
+  background-color: #333;
+  color: #fff;
+  padding: 30px;
+  border: 2px solid #00FF00;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #1f1f1f;
+  color: #777;
+}
+
+footer p {
+  font-size: 1rem;
+}
