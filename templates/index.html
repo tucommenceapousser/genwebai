@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assistant Création de Site</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assistant Web Créateur</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Assistant de Création de Site Web</h1>
-    <form method="POST">
-        <label for="mode">Choisissez le type de site :</label><br>
-        <input type="radio" id="html" name="mode" value="web" checked> Web (HTML/CSS/JS)<br>
-        <input type="radio" id="flask" name="mode" value="flask"> Flask (Python)<br><br>
-        
-        <label for="details">Décrivez votre site :</label><br>
-        <textarea name="details" rows="5" cols="50" placeholder="Ex: Un portfolio simple, un blog, etc."></textarea><br><br>
-
-        <label for="colors">Choisissez les couleurs :</label><br>
-        <input type="text" name="colors" placeholder="Ex: bleu, rouge, vert"><br><br>
-        
-        <input type="submit" value="Générer">
-    </form>
+  <header>
+    <h1>Bienvenue sur l'Assistant Web Créateur</h1>
+  </header>
+  
+  <main>
+    <section class="intro">
+      <h2>Choisissez le type de site</h2>
+      <button class="btn primary">HTML/CSS/JS</button>
+      <button class="btn secondary">Web Flask</button>
+    </section>
+    
+    <section class="preview">
+      <h2>Prévisualisation du site</h2>
+      <div id="preview-box">
+        <p>Votre site sera affiché ici...</p>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 par trhacknon</p>
+  </footer>
 </body>
 </html>
